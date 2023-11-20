@@ -1,0 +1,16 @@
+<div class="sidebar">
+    <h3>Formulario de notas</h3>
+    <form>
+        <label for="name">Nota:</label>
+        <input type="text" id="name" [(ngModel)]="nota.nota" name="cedula" required>
+        
+        <label for="email">Nombre:</label>
+        <input type="email" id="email" [(ngModel)]="nota.fecha" name="nombre" required>
+        
+        <label for="message">Direccion:</label>
+        <textarea id="message" [(ngModel)]="nota.etiqueta" name="direccion" required></textarea>
+        
+        <button (click)="enviar()" type="button">Enviar</button>
+        <br>
+    </form>
+</div>
